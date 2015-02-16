@@ -34,7 +34,7 @@ reference(
     [optional attributes])
 ```
 
-The "optional attributes" are relative to the specific reference types. These types are below. There is no specific sequence needed when defining the optional attributes.
+The "optional attributes" are relative to the specific reference types. These types are below. There is no specific sequence needed when defining the optional attributes. For some optional attributes, there are also shorthands available.
 
 ### [Internet](http://specials.han.nl/themasites/studiecentra/verwerken-en-delen/bronnen-vermelden/apa-normen/#comp00004b902de60000000b27453d)
 
@@ -52,13 +52,13 @@ reference(
 
 #### Optional attributes
 
-| Element | Attribute | Description |
-|:--|:----------|:------------|
-|__Author:__| `author` | Name of the person who wrote this reference. |
-|__Date of publishment:__| `date-of-publishment` | Date when this reference was published. |
-|__Document title:__| `document-title` | The title of the reference. |
-|__Date of consultancy:__| `date-of-consultancy` | The date when you  consulted this reference. |
-|__Location of the reference:__| `url` | The url to the internet source. |
+| Element | Attribute | Short | Description |
+|:--------|:----------|:------|:------------|
+|__Author:__| `author` | | Name of the person who wrote this reference. |
+|__Date of publishment:__| `date-of-publishment` | `dop` | Date when this reference was published. |
+|__Document title:__| `document-title` | `title` | The title of the reference. |
+|__Date of consultancy:__| `date-of-consultancy` | `doc` | The date when you  consulted this reference. |
+|__Location of the reference:__| `url` | | The url to the internet source. |
 
 ### Book
 
@@ -76,15 +76,15 @@ reference(
 
 #### Optional attributes
 
-| Element | Attribute | Description |
-|:--|:----------|:------------|
-|__Author:__ |`author` |Name of the person who wrote this reference.|
-|__When the author and the editor are the same:__ |`author-is-editor` |When the author and the editor are the same person, add the title of an editor in the same language as the title of the book to the attributes:|
-|__Date of publishment:__ |`date-of-publishment` |Date when this reference was published.|
-|__Document title:__ |`document-title` |The title of the reference.|
-|__Edition:__ |`edition` |It is possible to add the used edition, this will be appended to the title within brackets.|
-|__Publisher:__ |`publisher` |The name of the publisher of this reference.|
-|__Location of publishment:__ |`location` |The location where the reference was published.|
+| Element | Attribute | Short | Description |
+|:--------|:----------|:------|:------------|
+|__Author:__ |`author` |  | Name of the person who wrote this reference.|
+|__When the author and the editor are the same:__ |`author-is-editor` |  | When the author and the editor are the same person, add the title of an editor in the same language as the title of the book to the attributes:|
+|__Date of publishment:__ |`date-of-publishment` |  | Date when this reference was published.|
+|__Document title:__ |`document-title` |  | The title of the reference.|
+|__Edition:__ |`edition` |  | It is possible to add the used edition, this will be appended to the title within brackets.|
+|__Publisher:__ |`publisher` |  | The name of the publisher of this reference.|
+|__Location of publishment:__ | `location` |  | The location where the reference was published.|
 
 ### Magazine
 
