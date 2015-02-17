@@ -5,6 +5,7 @@ var shortHands = {
     "date-of-consultancy" : "doc",
     "date-of-publishment" : "dop",
     "document-title" : "title",
+    "author" : "auth",
 };
 
 module.exports = function($reference) {
