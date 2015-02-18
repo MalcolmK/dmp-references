@@ -1,8 +1,20 @@
+var shorttags = require("../helper_modules/shorttags.js");
+
 var referenceEntry = "";
+var shortHands = {
+    "author"              : "auth",
+    "date-of-publishment" : "dop",
+    "document-title"      : "title",
+    "publisher"           : "pub",
+    "location"            : "loc",
+    "description"         : "descr",
+};
 
 module.exports = function($reference) {
     // For some reason, the reference entry must be reset.
     referenceEntry = "";
+
+    shorties = shorttags($reference, shortHands);
 
     // Add author.
     addAuthor($reference);
@@ -19,73 +31,72 @@ module.exports = function($reference) {
     return referenceEntry;
 }
 
-function addSeperator(seperator) {
-    if (typeof seperator === 'undefined') {
-        seperator = ". "
+function addSeparator(separator) {
+    if (typeof separator === 'undefined') {
+        separator = ". "
     }
 
-    referenceEntry += seperator;
+    referenceEntry += separator;
 }
 
 function addDateOfPublishment($reference) {
-    if ($reference.attr("date-of-publishment")) {
-        referenceEntry += "(" + $reference.attr("date-of-publishment") + ")";
-        addSeperator();
+    if (shorties.hasUsedTag("date-of-publishment")) {
+        var dateOfPublishment = shorties.getAttribute("date-of-publishment");
+        referenceEntry += "(" + dateOfPublishment + ")";
+        addSeparator();
     }
 }
 
 function addDocumentTitle($reference) {
-    if ($reference.attr("document-title")) {
-        referenceEntry += "<i>" + $reference.attr("document-title") + "</i>";
+    if (shorties.hasUsedTag("document-title")) {
+        var documentTitle = shorties.getAttribute("document-title");
+        referenceEntry += "<i>" + documentTitle + "</i>";
 
         // If a description is provided, use a different separator.
-        seperator = ". ";
-        if (hasDescription($reference)) {
-            seperator = " ";
+        separator = ". ";
+        if (shorties.hasUsedTag("description")) {
+            separator = " ";
         }
-        addSeperator(seperator);
+        addSeparator(separator);
 
         addDescription($reference);
     }
 }
 
 function addAuthor($reference) {
-    if ($reference.attr("author")) {
-        referenceEntry += $reference.attr("author");
+    if (shorties.hasUsedTag("author")) {
+        var author = shorties.getAttribute("author");
+        referenceEntry += author;
 
-        addSeperator(" ");
+        addSeparator(" ");
     }
 }
 
 function addDescription($reference) {
-    if (hasDescription($reference)) {
-        referenceEntry += "(" + $reference.attr("description") + ")";
-        addSeperator();
+    if (shorties.hasUsedTag("description")) {
+        var description = shorties.getAttribute("description");
+        referenceEntry += "(" + description + ")";
+        addSeparator();
     }
-}
-
-function hasDescription($reference) {
-    if ($reference.attr("description")) {
-        return true;
-    }
-    return false;
 }
 
 function addPublisher($reference) {
-    if ($reference.attr("location")) {
-        referenceEntry += $reference.attr("location");
+    if (shorties.hasUsedTag("location")) {
+        var location = shorties.getAttribute("location");
+        referenceEntry += location;
 
-        // If the publisher is also mentioned, use a different seperator.
-        var seperator = ". ";
-        if ($reference.attr("publisher")) {
-            var seperator = ": ";
+        // If the publisher is also mentioned, use a different separator.
+        var separator = ". ";
+        if (shorties.hasUsedTag("publisher")) {
+            var separator = ": ";
         }
 
-        addSeperator(seperator);
+        addSeparator(separator);
     }
 
-    if ($reference.attr("publisher")) {
-        referenceEntry += $reference.attr("publisher");
-        addSeperator();
+    if (shorties.hasUsedTag("publisher")) {
+        var publisher = shorties.getAttribute("publisher");
+        referenceEntry += publisher;
+        addSeparator();
     }
 }

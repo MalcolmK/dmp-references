@@ -164,14 +164,14 @@ reference(
 
 #### Optional attributes
 
-| Element | Attribute | Description |
-|:--|:----------|:------------|
-| __Author:__ | `author` | Name of the person who wrote this reference. |
-| __Date of publishment:__ | `date-of-publishment` | Year when this reference was published. |
-| __Name of the document:__ | `document-title` | The title of the publication. |
-| __Publisher:__ | `publisher` | The name of the publisher of this reference. |
-| __Location of publishment:__ | `location` | The location where the reference was published. |
-| __Description of the document:__ | `description` | Provide a description of the reference. |
+| Element | Attribute | Short | Description |
+|:--------|:----------|:------|:------------|
+| __Author:__ | `author` | `auth` | Name of the person who wrote this reference. |
+| __Date of publishment:__ | `date-of-publishment` | `dop` | Year when this reference was published. |
+| __Name of the document:__ | `document-title` | `title` | The title of the publication. |
+| __Publisher:__ | `publisher` | `pub` | The name of the publisher of this reference. |
+| __Location of publishment:__ | `location` | `title` | The location where the reference was published. |
+| __Description of the document:__ | `description` | `descr` | Provide a description of the reference. |
 
 <a name="reference-type-online_image"></a>
 ### Online image
