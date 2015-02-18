@@ -115,15 +115,15 @@ reference(
 
 #### Optional attributes
 
-| Element | Attribute | Description |
-|:--|:----------|:------------|
-| __Author:__ | `author` | Name of the person who wrote this reference. |
-| __Date of publishment:__ | `date-of-publishment` | Year when this reference was published. |
-| __Name of the magazine:__ | `document-title` | The title of the magazine itself. |
-| __Title of this specific article:__ | `article-title` | The title of the article that is used. |
-| __Volume:__ | `volume` | Volume of the magazine. In general this is the number of the year it is published. |
-| __Edition:__ | `edition` | The edition of the magazine. In general this is the number of the edition in this volume (this year). |
-| __Page numbers:__ | `page-numbers` | Generally you are not using the whole magazine. So use this attribute to tell which pages are used. |
+| Element | Attribute | Short | Description |
+|:--------|:----------|:------|:------------|
+| __Author:__ | `author` | `auth` | Name of the person who wrote this reference. |
+| __Date of publishment:__ | `date-of-publishment` | `dop` | Year when this reference was published. |
+| __Name of the magazine:__ | `document-title` | `doc-title` | The title of the magazine itself. |
+| __Title of this specific article:__ | `article-title` | `art-title` | The title of the article that is used. |
+| __Volume:__ | `volume` | `vol` | Volume of the magazine. In general this is the number of the year it is published. |
+| __Edition:__ | `edition` | `ed` | The edition of the magazine. In general this is the number of the edition in this volume (this year). |
+| __Page numbers:__ | `page-numbers` | `p` | Generally you are not using the whole magazine. So use this attribute to tell which pages are used. |
 
 <a name="reference-type-newspaper"></a>
 ### Newspaper article
