@@ -189,10 +189,10 @@ reference(
 
 #### Optional attributes
 
-| Element | Attribute | Description |
-|:--|:----------|:------------|
-| __Author:__ | `author` | Name of the person who wrote this reference. |
-| __Date of publishment:__ | `date-of-publishment` | Date when this reference was published. |
-| __Document title:__ | `document-title` | The title of the reference. |
-| __Date of consultancy:__ | `date-of-consultancy` | The date when you consulted this reference. |
-| __Location of the reference:__ | `url` | The url to the internet source. |
+| Element | Attribute | Short | Description |
+|:--------|:----------|:------|:------------|
+| __Author:__ | `author` | `auth` | Name of the person who wrote this reference. |
+| __Date of publishment:__ | `date-of-publishment` | `dop` | Date when this reference was published. |
+| __Document title:__ | `document-title` | `title` | The title of the reference. |
+| __Date of consultancy:__ | `date-of-consultancy` | `doc` | The date when you consulted this reference. |
+| __Location of the reference:__ | `url` | `url` | The url to the internet source. |
