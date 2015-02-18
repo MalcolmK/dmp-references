@@ -11,6 +11,7 @@ module.exports = function($reference, shorttags) {
             return $reference.attr("" + shortTag + "");
         }
     };
+
     methods.hasUsedTag = function(fullTag) {
         if ($reference.attr(fullTag)) {
             return true;
@@ -18,12 +19,14 @@ module.exports = function($reference, shorttags) {
 
         return methods.hasUsedShortTag(fullTag);
     };
+
     methods.hasUsedFullTag = function(fullTag) {
         if ($reference.attr(fullTag)) {
             return true;
         }
         return false;
     };
+
     methods.hasUsedShortTag = function(fullTag) {
         var shortTag = methods.getShortTag(fullTag);
         if ($reference.attr(shortTag)) {
@@ -31,6 +34,7 @@ module.exports = function($reference, shorttags) {
         }
         return false;
     };
+
     methods.getShortTag = function(fullTag) {
         return shorttags[fullTag];
     }
