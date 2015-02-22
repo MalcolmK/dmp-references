@@ -1,6 +1,6 @@
 {
   "name": "dmp-references",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Documark plugin for listing references.",
   "main": "index.js",
   "repository": {
@@ -18,5 +18,8 @@
     "references",
     "sources"
   ],
-  "homepage": "https://github.com/MalcolmK/dmp-references"
+  "homepage": "https://github.com/MalcolmK/dmp-references",
+  "dependencies": {
+    "documark": "^0.3.0"
+  }
 }

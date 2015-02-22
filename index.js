@@ -16,6 +16,10 @@ module.exports = function dmpReferences ($, document, cb) {
     var options     = document.config().pdf;
     var $references = $('reference-list');
     var hasList     = ($references.length > 0);
+    var stylesheets = (document.config().stylesheets = (document.config().stylesheets || []));
+
+    // Add plug-in stylesheet.
+    stylesheets.push(path.resolve("./assets/style.css"));
 
     if (hasList) {
         var $list = $('<ol/>');
