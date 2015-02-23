@@ -20,6 +20,5 @@
   ],
   "homepage": "https://github.com/MalcolmK/dmp-references",
   "dependencies": {
-    "documark": "^0.4.0"
   }
 }
