@@ -19,7 +19,7 @@ module.exports = function dmpReferences ($, document, cb) {
     var stylesheets = (document.config().stylesheets = (document.config().stylesheets || []));
 
     // Add plug-in stylesheet.
-    stylesheets.push(path.resolve("./assets/style.css"));
+    stylesheets.push(path.join(__dirname, 'assets', 'style.css'));
 
     if (hasList) {
         var $list = $('<ol/>');
