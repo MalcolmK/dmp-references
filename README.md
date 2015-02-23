@@ -2,6 +2,9 @@
 
 Documark plugin for listing references.
 
+[![npm version](https://badge.fury.io/js/dmp-references.svg)](http://badge.fury.io/js/dmp-references)
+[![dependency status](https://david-dm.org/malcolmk/dmp-references.svg)](https://david-dm.org/malcolmk)
+
 ### Usage
 
 1. Load the references plugin:
