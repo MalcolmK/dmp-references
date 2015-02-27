@@ -25,6 +25,23 @@ Documark plugin for listing references.
 
     They will be collected and added as to a ordered list (`ol`) that is appended to the `reference-list` element.
 
+__NOTE:__
+Jade allows for [dot and pipe syntax](http://stackoverflow.com/a/16095056/739972). References do not render properly when using the Jade dot syntax. So instead of using the following syntax, which does not render properly:
+
+```jade
+p.
+ hello world!
+ references(reference-type="internet")
+```
+
+You should use:
+
+```jade
+p
+ | hello world!
+ references(reference-type="internet")
+```
+
 ## Reference types
 
 The following types of references are supported:
