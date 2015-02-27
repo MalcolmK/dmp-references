@@ -42,6 +42,12 @@ p
  references(reference-type="internet")
 ```
 
+## APA rules
+
+You can find the rules of the apa style guide here: [https://owl.english.purdue.edu/owl/resource/560/02/](https://owl.english.purdue.edu/owl/resource/560/02/). If someone believes to have found a better one, feel free to contact me!
+
+Clicking on a title of a reference type, will lead you to the online style guide about that kind of reference type.
+
 ## Reference types
 
 The following types of references are supported:
@@ -69,7 +75,7 @@ reference(
 The "optional attributes" are relative to the specific reference types. These types are below. There is no specific sequence needed when defining the optional attributes. For some optional attributes, there are also shorthands available.
 
 <a name="reference-type-internet"></a>
-#### [Internet](http://specials.han.nl/themasites/studiecentra/verwerken-en-delen/bronnen-vermelden/apa-normen/#comp00004b902de60000000b27453d)
+#### [Internet](https://owl.english.purdue.edu/owl/resource/560/10/)
 
 ##### Full example
 
@@ -95,7 +101,7 @@ reference(
 |__Location of the reference:__| `url` | | The url to the internet source. |
 
 <a name="reference-type-book"></a>
-#### Book
+#### [Book](https://owl.english.purdue.edu/owl/resource/560/08/)
 
 ##### Full example
 
@@ -123,7 +129,7 @@ reference(
 |__Location of publishment:__ | `location` | `loc` | The location where the reference was published.|
 
 <a name="reference-type-magazine"></a>
-#### Magazine
+#### [Magazine](https://owl.english.purdue.edu/owl/resource/560/07/)
 
 ##### Full example
 
@@ -152,7 +158,7 @@ reference(
 | __Page numbers:__ | `page-numbers` | `p` | Generally you are not using the whole magazine. So use this attribute to tell which pages are used. |
 
 <a name="reference-type-newspaper"></a>
-#### Newspaper article
+#### [Newspaper article](https://owl.english.purdue.edu/owl/resource/560/07/)
 
 ##### Full example
 
@@ -177,7 +183,7 @@ reference(
 | __Page numbers:__ | `page-numbers` | `p` | Generally you are not using the whole magazine. So use this attribute to tell which pages are used. |
 
 <a name="reference-type-not_published"></a>
-#### Not published reference
+#### [Not published reference](https://owl.english.purdue.edu/owl/resource/560/09/)
 
 ##### Full example
 
@@ -202,7 +208,7 @@ reference(
 | __Description of the document:__ | `description` | `descr` | Provide a description of the reference. |
 
 <a name="reference-type-online_image"></a>
-#### Online image
+#### [Online image](https://owl.english.purdue.edu/owl/resource/560/10/)
 
 ##### Full example
 
