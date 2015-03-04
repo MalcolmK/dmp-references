@@ -1,13 +1,13 @@
 # Documark References
 
-Documark plugin for listing references.
-
 [![npm version](https://badge.fury.io/js/dmp-references.svg)](http://badge.fury.io/js/dmp-references)
 [![dependency status](https://david-dm.org/malcolmk/dmp-references.svg)](https://david-dm.org/malcolmk)
 
+> Documark plugin for listing references.
+
 ## Usage
 
-1. Load the references plugin:
+1. Load the references plugin in your document configuration:
 
     ```yaml
     plugins:
@@ -30,16 +30,16 @@ Jade allows for [dot and pipe syntax](http://stackoverflow.com/a/16095056/739972
 
 ```jade
 p.
- hello world!
- references(reference-type="internet")
+	hello world!
+	reference(reference-type="internet", ...)
 ```
 
 You should use:
 
 ```jade
 p
- | hello world!
- references(reference-type="internet")
+	| hello world!
+	reference(reference-type="internet", ...)
 ```
 
 ## APA rules

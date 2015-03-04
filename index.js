@@ -84,12 +84,15 @@ function getReferenceIndex($referenceEntry) {
 
 function buildReferenceLine($reference) {
     var $referenceEntry = false;
+    var referenceType = $reference.attr("reference-type");
 
-    if (! $reference.attr("reference-type")) {
-        return;
+    if (! referenceType) {
+		referenceType = $reference.attr("type");
     }
 
-    var referenceType = $reference.attr("reference-type");
+    if (! referenceType) {
+        return;
+    }
 
     // Return the reference entry based on the type of reference.
     if (referenceType == "internet") {
