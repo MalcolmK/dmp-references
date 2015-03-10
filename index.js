@@ -17,7 +17,7 @@ module.exports = function dmpReferences ($, document, cb) {
     var $references = $('reference-list');
     var hasList     = ($references.length > 0);
 
-    $.root().append('<link rel="stylesheet" type="text/css" href="file://' + path.join(__dirname, 'assets', 'style.css') + '"/>');
+    $.root().append('<link rel="stylesheet" type="text/css" href="file://' + path.join(__dirname, 'assets', 'base.css') + '"/>');
 
     if (hasList) {
         var $list = $('<ol/>');
